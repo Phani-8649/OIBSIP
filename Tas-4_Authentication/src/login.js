@@ -93,17 +93,17 @@ window.confirmationResult.confirm(code).then((result) => {
 
 }
   return (
-    <div>
-      <h2>login form </h2>
-      <form onSubmit={onSignInSubmit}>
+    <div className='main'>
+      <h2>Login Form </h2>
+      <form className='f'onSubmit={onSignInSubmit}>
       <div id="sign-in-button"></div>
-        <input type="number" name="phonenumber" placeholder='phonenumber'  requierd onChange={handleChange}
+        <input className='i' type="number" name="phonenumber" placeholder='phonenumber'  requierd onChange={handleChange}
         />
         <button type="submit">submit</button>
       </form>
       <h2>Enter otp </h2>
-      <form onSubmit={onsubmitotp}>
-        <input type="number" name="otp" placeholder='otp' required onChange={handleChange} onClick={PostData}/>
+      <form className='f'onSubmit={onsubmitotp}>
+        <input className='i' type="number" name="otp" placeholder='otp' required onChange={handleChange} onClick={PostData}/>
         <button type="submit">submit</button>
       </form>
     </div>
